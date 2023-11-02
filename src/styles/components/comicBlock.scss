@@ -1,0 +1,20 @@
+.comicZoom {
+  border-radius: 12px;
+
+  display: inline-block;
+  overflow: hidden;
+
+  img {
+    transition: transform .2s;
+  }
+  
+  img:hover {
+    /* IE 9 */
+    -ms-transform: scale(1.1);
+
+    /* Safari 3-8 */
+    -webkit-transform: scale(1.1);
+
+    transform: scale(1.1);
+  }
+}

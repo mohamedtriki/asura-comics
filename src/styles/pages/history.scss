@@ -1,0 +1,38 @@
+.history-section .main-container {margin: auto;}
+.history-section .main-container.con-history-style{max-width: 1446px;}
+.history-section .main-container,.series-details .main-container{max-width: 1440px;}
+.history-section .header-content{padding-top: 180px !important}
+.con-history-style{background: #23002F;border: 1px solid #7334AE;border-radius: 16px;}
+.history-label{width: auto; min-width: 74px; /* height: 53px; */}
+.history-section .content{min-height: 290px}
+.history-section .content img.comic-img{width: 185px !important; border-radius: 12px; height: 290px !important}
+.history-section .theme-btn.w-90{width: 90% !important}
+.buttons-sec a:hover path{fill:white;}
+.buttons-sec a:hover rect{stroke:#8A4FC0;fill-opacity:0.8}
+.recommendation-section .main-container{max-width: 1740px;}
+.chapters-section .main-container,.comments-section .main-container{max-width: 1446px;}
+.chapters-section .container-style img{width: 100px;height: 100px;}
+.comments-section .responses .container-style{width: 133px; height: 51px}
+.response-dropdown{margin-top: -20px !important; }
+.response-dropdown a{box-shadow: none !important}
+.series-details .main-container{padding-top: 150px !important}
+.breadcrumb-item.active {    color: #7334AE}
+.scrolled-sec::-webkit-scrollbar {width: 4px;}
+.scrolled-sec::-webkit-scrollbar-track {background: #121111;border-radius:60px; }
+.scrolled-sec::-webkit-scrollbar-thumb {background:#7334AE;; ;border-radius:60px;}
+.scrolled-sec::-webkit-scrollbar-thumb:hover {background:#7334AE; }
+.comic-collection-section .main-container{max-width: 1920px}
+.chapter-section .main-container{max-width: 1160px}
+// .chapter-section .section-margin{margin-top: 180px !important}
+.chapter-section .dropdown button{background: rgba(91, 68, 176, 0.1)!important;border: 1px solid #7334AE;border-radius: 6px;font-size: 16px; color: #7334AE; text-transform: capitalize;font-weight: 400; width: 188px; padding-left: 15px !important}
+.chapter-section .dropdown ul{background: rgba(35, 0, 47, 0.45); border: 1px solid #7334AE; backdrop-filter: blur(15px); border-radius: 6px; color: white !important}
+.chapter-section .dropdown ul a{color: white}
+.chapter-section .dropdown .dropdown-toggle:after{display: none}
+.chapter-selection{top:200px; right: 0px; z-index: 1;position: fixed}
+.chapter-selection a.side-btn{ &:hover{ cursor: pointer; } }
+.chapter-pg{overflow-x: hidden}
+.recommended-collection .main-container{max-width: 1740px}
+.recommended-collection .trending-slider-sec .content{padding: 35px 26px}
+.recommended-collection .trending-slider-sec img{width: 113px; height: 154px}
+.recommended-collection .trending-slider .content{min-height: 435px; padding: 20px 10px}
+.recommended-collection .trending-slider .slide-content{padding: 0 8px 50px 8px}

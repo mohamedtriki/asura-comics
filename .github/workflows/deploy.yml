@@ -1,0 +1,25 @@
+name: deploy
+on:
+  push:
+    # Sequence of patterns matched against refs/heads
+    branches:    
+      - main
+
+jobs:
+  deploy-test:
+    name: deploy-test
+    runs-on: ubuntu-latest
+    steps:
+      - name: executing remote ssh commands using ssh key
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script_stop: true
+          script: |
+            cd /home/git-runner/asura/frontend
+            git pull
+            docker build -t asura/frontend .
+            docker-compose up -d

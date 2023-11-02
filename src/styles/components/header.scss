@@ -1,0 +1,119 @@
+.input-style {
+  width: 308px;
+  height: 52px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 60px;
+}
+
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+.input-inner {
+  width: 100%;
+  height: 100%;
+
+  background: none;
+  border-radius: 60px;
+  border-style: hidden;
+  padding: 0 20px;
+}
+
+.input-inner::placeholder {
+  font-size: 16px;
+  color: #9BA7BF;
+}
+
+.fa-bell:before {
+  content: none
+}
+
+.badge-notification {
+  font-size: 12px;
+  margin-top: 18px;
+  margin-left: -11px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0.2em 0.35em;
+}
+
+.rounded-pill {
+  background: #D70707;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px
+}
+
+.navbar {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+}
+
+.header-dropdown .dropdown-menu {
+  background: rgba(35, 0, 47, 0.45);
+  border: 1px solid #7334AE;
+  backdrop-filter: blur(15px);
+  border-radius: 14px;
+  margin-top: 18px;
+  font-family: 'Biennale';
+  left: auto;
+  right: 0
+}
+
+.notification-sec .dropdown-menu {
+  width: 240px;
+  /* height: 282px; */
+}
+
+.navbar-nav .header-dropdown .dropdown-menu.language {
+  left: 18px;
+  right: auto
+}
+
+.caption-container {
+  max-width: 100%;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 0;
+  top: 250px;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+}
+
+.images-slider .slide-content {
+  padding: 0 28px 0 0px;
+}
+
+@media (max-width:576px) {
+  .images-slider .slide-content {
+    padding: 0 calc(var(--mdb-gutter-x) * 0.5) 0 0px;
+  }
+}
+
+.slider-sec {
+  width: 786px
+}
+
+.images-slider .slick-arrow.slick-next {
+  right: 0 !important;
+  transform: translateX(50%) !important;
+
+  top: 0px !important;
+  bottom: 0px !important;
+}
+
+.images-slider .slick-arrow.slick-prev {
+  display: none !important
+}
+
+.section-margin {
+  margin-top: 100px !important
+}

@@ -1,0 +1,2374 @@
+@import './pages/index.scss';
+@import './components/index.scss';
+
+@import './theme/index.scss';
+@import './misc-custom.scss';
+@import './animations.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    color-scheme: dark;
+}
+
+/*****************************************Scroll*****************************************/
+// ::-webkit-scrollbar {
+//     width: 12px !important; // 6
+//     max-width: 12px !important;
+//     height: 12px !important;
+//     max-height: 12px !important;
+// }
+
+// ::-webkit-scrollbar-track {
+//     background: rgb(1, 1, 1);
+//     // background: #fff;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//     // background: #7334AE;
+//     // border-radius: 5px;
+//     background: rgb(110, 110, 110);
+//     border-radius: 10px;
+// }
+
+// ::-webkit-scrollbar-thumb:hover {
+//     // background: #7334AE;
+//     background: rgb(110, 110, 110);
+// }
+
+
+/*****************************************Body and heading*****************************************/
+body {
+    font-family: 'Biennale';
+    color: #FFFFFF;
+    background: #121111
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 75px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 56px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+li {
+    font-size: 14px;
+    font-weight: 400;
+    list-style-type: none;
+}
+
+a {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+a:hover {
+    color: #FFFFFF
+}
+
+
+/*****************************************General*****************************************/
+.clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-width: 95%;
+}
+
+.noScroll {
+    overflow: hidden;
+}
+
+.asuraads {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    // margin-bottom: 2rem;
+
+    // > div{
+    //     padding: 3px !important;
+    //     border: 1.5px solid white;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
+
+    // &::before {
+    //     content: "ADVERTISEMENT";
+    //     position: absolute;
+    //     bottom: -20px;
+    //     border: none;
+    // }
+}
+
+// .leaderboard-atf {
+//     max-width: 970px;
+//     width: 970px;
+//     max-height: 270px;
+//     height: 270px;
+//     overflow: hidden;
+//     margin: 1rem 0;
+// }
+// .leaderboard-btf {
+//     max-width: 728px;
+//     width: 728px;
+//     max-height: 110px;
+//     height: 110px;
+//     overflow: hidden;
+//     margin: 1rem 0;
+// } 
+// .med-rect-atf {
+//     max-width: 300px;
+//     width: 300px;
+//     max-height: 270px;
+//     height: 270px;
+//     overflow: hidden;
+//     margin: 1rem 0;
+// } 
+// .med-rect-btf {
+//     max-width: 300px;
+//     width: 300px;
+//     max-height: 270px;
+//     height: 270px;
+//     overflow: hidden;
+//     margin: 1rem 0;
+// } 
+
+.flameshareseries {
+    .socialalts {
+        // display: block !important;
+        justify-content: flex-start;
+    }
+}
+
+button#dropdownMenuButton {
+    overflow: hidden;
+}
+
+.images-slider img {
+    border-radius: 12px;
+}
+
+.socialalts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    
+    justify-content: center;
+
+    a {
+        padding: 5px 10px;
+        border-radius: 8px;
+        margin: 3px;
+
+        font-size: clamp(0.6rem, 2.5vw, 1rem); 
+    }
+
+    .fb {
+        background-color: #3b5999;
+    }
+
+    .twt {
+        background-color: #1da1f2;
+    }
+
+    .wa {
+        background-color: #01ba6d;
+    }
+
+    .pntrs {
+        background-color: #e81737;
+    }
+}
+
+
+/*****************************************Responsive from original conversion*****************************************/
+ @media (min-width:2560px) {
+    .ultrawide {
+        align-content: center;
+        max-width: 2560px;
+        margin: auto !important;
+    }
+   .uw-h5 {
+        font-size: 1.25rem;
+   }
+ }
+
+
+
+@media (min-width:1920px) {
+    .comic-collection-section .main-container {
+        max-width: 100% !important;
+    }
+
+    .comic-col-pg .trending-slider-sec .images-sec img {
+        width: auto;
+        height: 140px
+    }
+
+    //.latestUpdates-section .content img {
+    //    width: 100%;
+    //    height: 100%;
+    //    border-radius: 12px;
+    //}
+
+    .images-slider img {
+        max-width: 200px;
+        height: 278px;
+    }
+
+    .popularSeries-section {
+        padding-left: 0 !important;
+    }
+}
+
+@media (min-width:1801px) and (max-width:1919px) {
+    .privacy-section p br {
+        display: none !important
+    }
+
+    .blog-section p br {
+        display: none !important
+    }
+
+    .comic-col-pg .trending-slider-sec .images-sec img {
+        width: auto;
+        height: 140px
+    }
+
+    .images-slider img {
+        max-width: 200px;
+        height: 278px;
+    }
+}
+
+@media (min-width:1441px) and (max-width:1800px) {
+    .series-slider img {
+        max-width: 220px;
+        height: auto
+    }
+
+    .nav-container {
+        max-width: 90% !important
+    }
+
+    .main-container {
+        max-width: 100% !important;
+        padding-left: 3rem;
+    }
+
+    .subscribe-sec {
+        width: 100%
+    }
+
+    .carousel-caption {
+        left: 100px
+    }
+
+    .header .slider-section img.desktop {
+        height: 1050px !important;
+        object-fit: cover
+    }
+
+    .latestUpdates-section .content img {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+    }
+
+    .register-section img {
+        width: 90%
+    }
+
+    .privacy-section p br {
+        display: none !important
+    }
+
+    .privacy-section .main-container {
+        max-width: 90% !important
+    }
+
+    .chapter-section .main-container {
+        max-width: 70% !important
+    }
+
+    .blog-section .main-container,
+    .bookmark-section .main-container,
+    .history-section .main-container,
+    .chapters-section .main-container,
+    .comments-section .main-container,
+    .series-details .main-container {
+        max-width: 90% !important
+    }
+
+    .upgrade-section .main-container {
+        max-width: 70% !important
+    }
+
+    .blog-section p br {
+        display: none !important
+    }
+
+    .trending-slider-sec .images-sec img {
+        width: 100%;
+        height: auto
+    }
+
+    .comic-col-pg .trending-slider-sec .images-sec img {
+        width: auto;
+        height: 140px
+    }
+
+    .container-style.history-label label,
+    .container-style.history-label h5 {
+        font-size: 12px !important
+    }
+
+    .series-details img.comic {
+        width: 100%
+    }
+
+    .comic-collection-section .main-container {
+        max-width: 100% !important;
+    }
+
+    .comic-collection-section .col-sm-4 {
+        width: 40%
+    }
+
+    .comic-collection-section .col-sm-8 {
+        width: 60%
+    }
+
+    .comic-collection-section .latestUpdates-section .content img {
+        width: 180px;
+    }
+
+    .comic-collection-section .latestUpdates-section .font-20 {
+        font-size: 15px
+    }
+
+    // .chapter-selection {
+    //     right: -8px !important
+    // }
+
+    .series-details h2 {
+        font-size: 70px
+    }
+
+    .series-details h3 {
+        font-size: 40px
+    }
+
+    .comments-section h5 {
+        font-size: 20px
+    }
+
+    .con-history-style .inner-sec p br {
+        display: none
+    }
+
+    .chapt-desc {
+        padding-right: 60px
+    }
+
+    .images-slider img {
+        max-width: 200px;
+        height: 278px;
+    }
+
+}
+
+@media (min-width:1441px) and (max-width:1600px) {
+    .comic-col-pg .trending-slider-sec .images-sec img {
+        width: auto;
+        height: 120px
+    }
+
+    .images-slider img {
+        max-width: 200px;
+        height: 278px;
+    }
+}
+
+@media (min-width:1441px) and (max-width:1520px) {
+    .trending-slider-sec .images-sec img {
+        width: 140px;
+        height: auto
+    }
+
+    .comics-section .dropdowns-sec .dropdown-tranparent {
+        width: 210px;
+    }
+
+    .bookmark-section .content .px-5 {
+        padding: 0px 20px !important
+    }
+
+    .bookmark-section .content button {
+        margin: 0 3px !important
+    }
+
+    .history-section .main-container {
+        max-width: 90% !important
+    }
+
+    .history-section p br {
+        display: none !important
+    }
+
+    .history-section .con-history-style p {
+        padding-right: 30px
+    }
+
+    .comic-collection-section .latestUpdates-section .font-20 {
+        font-size: 15px
+    }
+
+    .comic-col-pg .trending-slider-sec .images-sec img {
+        width: auto;
+        height: 130px
+    }
+
+    .images-slider img {
+        max-width: 200px;
+        height: 278px;
+    }
+}
+
+/* seems to be 14 inches */
+@media (min-width:1200px) and (max-width:1439px) {
+    .homepage .carousel-item {
+        height: 680px;
+    }
+
+    .leftSeries-slider {
+        button.slick-arrow.slick-next {
+            height: 0;
+            top: 95%;
+            bottom: 90%;
+        }
+    }
+
+    button.slick-arrow.slick-next {
+        height: 90%;
+    }
+}
+
+@media (min-width:1281px) and (max-width:1440px) {
+    .nav-container {
+        max-width: 90% !important;
+    }
+
+    .main-container {
+        max-width: 90% !important
+    }
+
+    // .popularSeries-section {
+    //     .main-container {
+    //         margin-bottom: -100px;
+    //     }
+    // }
+
+    .navbar .nav-link {
+        font-size: 12px
+    }
+
+    footer .footer-logo {
+        // width: 100%;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // footer .navigate-sec {
+    //     width: 40%;
+    // }
+
+    // footer .social-sec {
+    //     width: 20%;
+    // }
+
+    // .subscribtion-sec {
+    //     width: 30%;
+    // }
+
+    footer p br {
+        display: none !important
+    }
+
+    .header .slider-section img.desktop {
+        height: 1050px !important
+    }
+
+    .carousel-caption {
+        left: 100px
+    }
+
+    .latestUpdates-section .content img {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+    }
+
+    .register-section img {
+        width: 90%
+    }
+
+    .upgrade-section .main-container {
+        max-width: 70% !important
+    }
+
+    .privacy-section p br,
+    .blog-section p br,
+    .series-details p br {
+        display: none !important
+    }
+
+    .trending-slider-sec .images-sec img {
+        width: 110px;
+        height: auto
+    }
+
+    .comics-section .dropdowns-sec .dropdown-tranparent {
+        width: 190px;
+    }
+
+    .vip-section .content h4 {
+        font-size: 40px !important;
+    }
+
+    .vip-section .content img.flame {
+        margin: 0px !important;
+        width: 40px;
+    }
+
+    .bookmark-section .content .px-5 {
+        padding: 0px 20px !important
+    }
+
+    .bookmark-section .content button {
+        margin: 0 4px !important
+    }
+
+    .history-section p br {
+        display: none !important
+    }
+
+    .history-section .con-history-style p {
+        padding-right: 30px
+    }
+
+    .history-section .content img.comic-img {
+        width: 150px !important
+    }
+
+    .container-style.history-label label,
+    .container-style.history-label h5 {
+        font-size: 11px !important
+    }
+
+    .series-details img.comic {
+        width: 100%
+    }
+
+    .chapters-section .container-style img {
+        width: 100px;
+    }
+
+    .comic-collection-section .main-container {
+        max-width: 100% !important;
+    }
+
+    .comic-collection-section .col-sm-4 {
+        width: 45%
+    }
+
+    .comic-collection-section .col-sm-8 {
+        width: 55%
+    }
+
+    .comic-collection-section .latestUpdates-section .content img {
+        width: 180px;
+    }
+
+    .comic-collection-section .latestUpdates-section .font-20 {
+        font-size: 15px
+    }
+
+    .series-details h2 {
+        font-size: 60px
+    }
+
+    .comments-section h5 {
+        font-size: 14px
+    }
+
+    .comic-col-pg .trending-slider-sec .images-sec img {
+        width: auto;
+        height: 90px
+    }
+
+}
+
+@media (min-width:1025px) and (max-width:1280px) {
+    .notification-section .notification-sec {
+        margin: 0 10px !important
+    }
+
+    footer p br {
+        display: none !important
+    }
+
+    .nav-container {
+        max-width: 90% !important
+    }
+
+    // .popularSeries-section {
+    //     .main-container {
+    //         margin-bottom: -100px;
+    //     }
+    // }
+
+    .main-container {
+        max-width: 90% !important
+    }
+
+    .navbar .nav-link {
+        font-size: 12px
+    }
+
+    footer .footer-logo {
+        // width: 100%;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carousel-caption {
+        left: 100px
+    }
+
+    .subscribe-sec {
+        width: 100%
+    }
+
+    // footer .navigate-sec {
+    //     width: 40%;
+    // }
+
+    // footer .social-sec {
+    //     width: 22%;
+    // }
+
+    // .subscribtion-sec {
+    //     width: 38%;
+    // }
+
+    .latestUpdates-section .content img {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+    }
+
+    .register-section img {
+        width: 90%
+    }
+
+    .upgrade-section .main-container {
+        max-width: 70% !important
+    }
+
+    .privacy-section p br {
+        display: none !important
+    }
+
+    .comic-collection .images-sec img {
+        width: 55px !important;
+        height: auto
+    }
+
+    /* mine */
+    .trending-slider-sec .images-sec img {
+        width: 90px;
+        height: auto
+    }
+
+    .comics-section .dropdowns-sec .dropdown-tranparent {
+        width: 150px;
+        height: 100%;
+    }
+
+    .vip-section .content h4 {
+        font-size: 30px !important;
+    }
+
+    .series-details h2 {
+        font-size: 60px !important;
+    }
+
+    .bookmark-section .content .px-5 {
+        padding: 0px 20px !important
+    }
+
+    .bookmark-section .content button {
+        margin: 0 4px !important
+    }
+
+    .history-section p br,
+    .series-details p br {
+        display: none !important
+    }
+
+    .history-section .con-history-style p {
+        padding-right: 30px
+    }
+
+    .history-section img {
+        width: 55%
+    }
+
+    .history-section .content img.comic-img {
+        width: 130px !important
+    }
+
+    /* .container-style.history-label{padding: 5px !important} */
+    .series-details img.comic {
+        width: 100%
+    }
+
+    .chapters-section .container-style img {
+        width: 126px;
+        height: 126px
+    }
+
+    .chapters-section .container-style .d-flex {
+        margin: 0 7px !important
+    }
+
+    .comic-collection-section .main-container {
+        max-width: 100% !important;
+    }
+
+    .comic-collection-section h2 {
+        font-size: 50px !important;
+    }
+
+    .comic-collection-section .col-sm-4 {
+        width: 40%
+    }
+
+    .comic-collection-section .col-sm-8 {
+        width: 60%
+    }
+
+    .comic-collection-section .latestUpdates-section .content img {
+        width: 160px;
+    }
+
+    .comic-collection-section .latestUpdates-section .font-20 {
+        font-size: 13px
+    }
+}
+
+@media (min-width:1025px) and (max-width:1200px) {
+    .history-section .content h4 {
+        font-size: 30px !important
+    }
+
+    .history-section .content p {
+        font-size: 12px !important
+    }
+
+    .container-style.history-label label {
+        font-size: 12px !important
+    }
+
+    .container-style.w-780 {
+        width: auto !important
+    }
+
+    .chapters-section .container-style .d-flex {
+        margin: 0 5px !important
+    }
+
+    .chapters-section .container-style img {
+        width: 126px;
+    }
+
+    .chapters-section .container-style h5 {
+        font-size: 20px !important
+    }
+
+    .comic-collection-section .latestUpdates-section {
+        padding: 0px !important;
+    }
+
+}
+
+@media(width:1024px) {
+    .notification-section {
+        display: none !important
+    }
+
+    .nav-container {
+        max-width: 90% !important
+    }
+
+    .main-container {
+        max-width: 90% !important
+    }
+
+    .comic-collection-section .col-sm-4,
+    .comic-collection-section .col-sm-8 {
+        width: 100%;
+    }
+
+    .comic-collection-section .latestUpdates-section .content img {
+        width: 180px;
+    }
+
+    .carousel-caption {
+        left: 90px
+    }
+
+    footer .footer-logo {
+        // width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column
+    }
+
+    // footer .navigate-sec {
+    //     width: 50%;
+    // }
+
+    // footer .social-sec {
+    //     width: 30%;
+    // }
+
+    // .subscribtion-sec {
+    //     width: 100%;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     flex-direction: column
+    // }
+
+    .latestUpdates-section .content img {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+    }
+
+    .latestUpdates-section .col-sm-2 {
+        width: 33%
+    }
+
+    .register-section img {
+        width: 90%
+    }
+
+    .privacy-section p br,
+    .blog-section p br,
+    .history-section p br,
+    .series-details p br {
+        display: none !important
+    }
+
+    .blog-section .content {
+        min-height: 620px
+    }
+
+    .trending-slider-sec .images-sec img {
+        width: 82px;
+        height: auto
+    }
+
+    .comics-section .dropdowns-sec .dropdown-tranparent,
+    .comics-section .dropdowns-sec .theme-btn {
+        // margin: 8px 5px !important;
+        width: 240px;
+    }
+
+    .comics-section .dropdowns-sec {
+        justify-content: center !important;
+    }
+
+    .vip-section .content h4 {
+        font-size: 28px !important;
+        margin: 0px !important
+    }
+
+    .vip-section .content h3 {
+        font-size: 30px !important;
+    }
+
+    .series-details h2 {
+        font-size: 50px !important;
+    }
+
+    .vip-section .content img.flame {
+        margin: 0px !important;
+        width: 33px;
+    }
+
+    .bookmark-section .content .px-5 {
+        padding: 0px 20px !important
+    }
+
+    .bookmark-section .content button {
+        margin: 0 3px !important
+    }
+
+    .bookmark-section .content h2 br {
+        display: none !important;
+    }
+
+    .bookmark-section .content h2 {
+        font-size: 18px !important
+    }
+
+    .series-details .rating label {
+        font-size: 20px !important
+    }
+
+    .bookmark-section .content h2,
+    .history-section .main-container h2 {
+        font-size: 38px !important
+    }
+
+    .history-section img {
+        width: 55%
+    }
+
+    .history-section .col-sm-4 {
+        width: 50%;
+        margin-top: 40px !important
+    }
+
+    .container-style.w-780 {
+        width: auto !important
+    }
+
+    .chapters-section .col-sm-3 {
+        width: 33%
+    }
+
+    .comments-section .responses .container-style {
+        width: 110px;
+    }
+
+    .series-details img.comic {
+        width: 100%
+    }
+
+    .play-s-btn {
+        width: 65px;
+        height: auto;
+        top: 220px !important;
+        left: 44% !important;
+    }
+
+    .chapters-section .font-24 {
+        font-size: 18px
+    }
+
+    .chapters-section label {
+        font-size: 12px
+    }
+
+    .keywords-sec {
+        flex-wrap: wrap;
+    }
+
+    .keywords-sec .container-style {
+        white-space: nowrap;
+        margin-top: 10px !important;
+    }
+
+    .comic-col-pg .desktop.trending-slider-sec {
+        display: none !important
+    }
+
+    .comic-col-pg .comic-trending {
+        display: flex !important
+    }
+
+    // .text-t-center {
+    //     text-align: center !important
+    // }
+
+    .text-t-center.desktop {
+        width: 100%;
+        justify-content: center
+    }
+}
+
+@media (min-width:769px) {
+    .desktop {
+        display: flex !important
+    }
+
+    .mobile {
+        display: none !important
+    }
+
+}
+
+@media (width:768px) {
+    /* .homepage .carousel-item {
+      height: 800px;
+    } */
+
+    // footer .footer-logo {
+    //     width: 100%;
+    // }
+
+    // footer .navigate-sec {
+    //     width: 60%;
+    // }
+
+    // footer .social-sec {
+    //     width: 40%;
+    // }
+
+    .subscribtion-sec {
+        margin-top: 63px !important;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column
+    }
+
+    .footer-bottom div {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    footer p,
+    .header .slider-section p {
+        padding: 0 80px;
+    }
+
+    footer .desktop {
+        display: flex !important
+    }
+
+    footer .mobile {
+        display: none !important
+    }
+
+    .header .slider-section .desktop {
+        display: flex !important
+    }
+
+    .header .slider-section .mobile {
+        display: none !important
+    }
+
+    .latestUpdates-section .main-container,
+    .history-section .main-container,
+    .comments-section .main-container {
+        max-width: 90% !important
+    }
+
+    .upgrade-section .main-container {
+        max-width: 70% !important
+    }
+
+    .register-section .main-container,
+    .vip-section .main-container {
+        max-width: 80% !important
+    }
+
+    .latestUpdates-section .col-sm-2 {
+        width: 33%
+    }
+
+    .trending-section .slider {
+        margin-left: -50px !important
+    }
+
+    .blog-section .main-container,
+    .bookmark-section .main-container,
+    .chapters-section .main-container {
+        max-width: 90% !important
+    }
+
+    .vip-section .col-sm-4 {
+        width: 100%;
+    }
+
+    .bookmark-section .mobile .content .modal {
+        left: 20%
+    }
+
+    .history-section .col-sm-4 {
+        width: 50%
+    }
+
+    .container-style.history-label {
+        padding: 5px !important;
+        display: flex;
+        justify-content: center;
+        flex-direction: column
+    }
+
+    .chapters-section .col-sm-3 {
+        width: 33%
+    }
+
+    .chapters-section .container-style .d-flex {
+        margin: 0 5px !important
+    }
+
+    .comic-col-pg .trending-slider .content {
+        padding: 20px 30px !important
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .homepage .carousel-item {
+        height: 780px;
+    }
+
+    .desktop {
+        display: none !important
+    }
+
+    .mobile {
+        display: flex !important
+    }
+
+    .mobile-nav {
+        display: flex !important;
+    }
+
+    .order-1 {
+        order: 1
+    }
+
+    .order-12 {
+        order: 12
+    }
+
+    .section-margin {
+        margin-top: 60px !important
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px !important;
+    }
+
+    p br {
+        display: none !important
+    }
+
+    .items-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .m-flex-reverse {
+        flex-direction: column-reverse
+    }
+
+    .m-flex-column {
+        flex-direction: column
+    }
+
+    .m-align-center {
+        align-items: center;
+    }
+
+    .m-text-center {
+        text-align: center;
+    }
+
+    .m-d-flex {
+        display: flex;
+    }
+
+    .theme-btn {
+        width: 247px !important;
+        height: 40px !important
+    }
+
+    // .latestUpdates-section .theme-btn {
+    //     width: 331px !important;
+    // }
+
+    .top-icon .btn-top {
+        top: 8px;
+        right: 0px;
+        font-size: 10px;
+        height: unset;
+        padding: 10px;
+    }
+
+    .series-comic-slider .content .top-icon .btn-top {
+        top: 8px;
+        right: 6px
+    }
+
+    .latestUpdates-section .content img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* .latestUpdates-section .content h5{font-size: 12px; margin-bottom: 3px; min-height: 40px} */
+    .latestUpdates-section .content h5 {
+        font-size: 16px;
+        margin-bottom: 3px;
+    }
+
+    .latestUpdates-section .content h5 br {
+        display: none
+    }
+
+    // .leftSeries-slider img.slide-img {
+    //     width: 331px;
+    //     height: 316px
+    // }
+
+    .leftSeries-slider p br {
+        display: flex !important
+    }
+
+    .leftSeries-slider p,
+    .vip-section .content p,
+    .comic-collection-section p {
+        font-size: 12px !important
+    }
+
+    .leftSeries-slider .inner-content {
+        margin-left: 0px !important;
+        width: 100%
+    }
+
+    .leftSeries-slider p br {
+        display: none
+    }
+
+    .leftSeries-slider .slick-arrow {
+        display: none !important
+    }
+
+    .leftSeries-slider .slide-content {
+        padding: 0px;
+        position: relative;
+        // max-height: 306px;
+    }
+
+    .slick-dots {
+        position: relative;
+        justify-content: center !important;
+        right: 0;
+        bottom: 0
+    }
+
+    .slick-dots li {
+        width: 8px !important;
+        height: 8px !important;
+    }
+
+    .upgrade-section img {
+        width: 45px
+    }
+
+    .trending-slider .images-sec img {
+        width: 85px;
+        height: 118px
+    }
+
+    .trending-slider .content {
+        padding: 35px 23px;
+        min-height: 565px;
+    }
+
+    .trending-slider .content button {
+        width: 247px !important
+    }
+
+    .trending-slider .content label {
+        font-size: 14px !important
+    }
+
+    .trending-slider .content .badge-img {
+        width: 16px !important;
+        height: 15px !important;
+    }
+
+    .trending-section h3 {
+        font-size: 22px !important
+    }
+
+    .trending-section select,
+    .comic-collection-section label {
+        font-size: 16px !important
+    }
+
+    .register-section .content {
+        margin-left: 0px;
+        margin-top: -100px
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+    }
+
+    .footer-section p {
+        font-size: 13px !important;
+    }
+
+    .footer-bottom p {
+        font-size: 12px !important;
+        margin-bottom: 8px
+    }
+
+    .footer-section a {
+        font-size: 14px;
+    }
+
+    .footer-section h4,
+    .privacy-section .content h4,
+    .blog-section h4,
+    .history-section .content h4,
+    .responses .container-style h5,
+    .comments-container h5,
+    .chapters-section h5,
+    .series-details h5 {
+        font-size: 16px !important
+    }
+
+    .footer-logo img {
+        width: 194px;
+        height: 194px
+    }
+
+    .footer-logo {
+        display: flex !important;
+        align-items: center;
+        justify-content: center
+    }
+
+    .subscribe-sec {
+        width: 100%
+    }
+
+    .social-sec .col-sm-12 {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-inner {
+        margin-top: -30px;
+    }
+
+    .trending-slider .slick-dots {
+        display: flex !important;
+        margin-top: -23px
+    }
+
+    .seriesTitle {
+        font-size: calc(1.6rem + 0.6vw) !important;
+    }
+
+    footer {
+        padding: 1rem !important
+    }
+
+    .latestUpdates-section a,
+    .blog-section .content a,
+    .profile-pg .header p,
+    .history-section .content p,
+    .comments-section a.comments {
+        font-size: 12px !important;
+    }
+
+    .leftSeries-slider .slide {
+        padding: 0 15px 0 15px !important;
+    }
+
+    .leftSeries-slider .slick-dots {
+        bottom: -40px;
+        left: 0;
+        right: 0
+    }
+
+    .privacy-section h2,
+    .blog-section h2,
+    .bookmark-section h2,
+    .comics-section h2,
+    .vip-section h2,
+    .history-section h2 {
+        font-size: 36px !important
+    }
+
+    .privacy-section .content p,
+    .blog-section .content p,
+    .blog-section .content label,
+    .history-section .content label,
+    .comments-container p,
+    .chapters-section label,
+    .series-details p {
+        font-size: 12px !important
+    }
+
+    .privacy-section .header-content,
+    .bookmark-section .main-container,
+    // .comics-section .main-container,
+    .vip-section .main-container {
+        margin-top: -100px !important;
+        padding-top: 0 !important
+    }
+
+    .privacy-section .main-container {
+        margin-top: 180px !important;
+        padding-top: 0 !important
+    }
+
+    .history-section .header-content {
+        margin-top: -50px !important;
+        padding-top: 0 !important
+    }
+
+    .blog-section .header-content {
+        margin-top: -150px !important;
+        padding-top: 0px !important
+    }
+
+    .profile-pg .header-content {
+        padding-top: 0px !important
+    }
+
+    //.series-details .main-container {
+    //    padding-top: 0 !important
+    //}
+
+    .blog-section .header-content p,
+    .trending-slider-section h5,
+    .breadcrumb li,
+    .breadcrumb li a {
+        font-size: 14px !important
+    }
+
+    .blog-section .content img.admin {
+        width: 35px
+    }
+
+    .blog-section .content {
+        min-height: 373px
+    }
+
+    .profile-pg .header .header-content .main-container .inner-sec {
+        padding: 0px
+    }
+
+    .m-top-mb {
+        margin-top: -60px
+    }
+
+    .bookmark-section select {
+        width: 165px;
+        height: 37px
+    }
+
+    /* .comics-section .dropdowns-sec .dropdown-tranparent{width: 165px; height: 40px !important; margin:8px 0 !important; font-size: 12px} */
+    .comics-section .dropdowns-sec .dropdown-tranparent {
+        width: calc(50% - 5px);
+        // margin-top: 5px !important;
+        // margin-bottom: 5px !important;
+        font-size: 12px;
+        // background: none;
+        padding: 0
+    }
+
+    .comics-section .dropdowns-sec {
+        .right {
+            margin-right: 5px;
+        }
+
+        .left {
+            margin-left: 5px;
+        }
+    }
+
+    .vip-section .content h4 {
+        font-size: 28px !important;
+    }
+
+    .vip-section .content h3 {
+        font-size: 24px !important;
+    }
+
+    .vip-section .content {
+        min-height: 290px !important;
+        margin: 15px 0px !important;
+        border-width: 1.4px;
+        border-radius: 12px
+    }
+
+    .vip-section .content img {
+        width: 33px;
+        height: 33px
+    }
+
+    .vip-section .content img.flame {
+        width: 37px;
+        height: 53px
+    }
+
+    .bookmark-section .dropdown {
+        max-width: 165px;
+    }
+
+    .profile-tabs .nav-tabs {
+        flex-wrap: initial;
+        white-space: nowrap;
+        text-align: center
+    }
+
+    .read-more.mobile {
+        display: block !important
+    }
+
+    .read-more button {
+        background: none;
+        border: none;
+        padding: 0
+    }
+
+    .history-section .content img.comic-img {
+        width: 127px !important;
+        height: 100% !important
+    }
+
+    .history-section .content {
+        min-height: 189px
+    }
+
+    .history-section .content h5,
+    .comments-container label {
+        font-size: 10px !important
+    }
+
+    .history-section .content p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box !important;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+    }
+
+    .keywords-sec .container-style {
+        width: auto !important;
+        margin: 5px 5px !important
+    }
+
+    .keywords-sec {
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .input-sec {
+        height: 50px !important
+    }
+
+    .input-sec img {
+        width: 36px
+    }
+
+    .series-details img.share {
+        width: 30px
+    }
+
+    .comments-container img.person {
+        width: 32px
+    }
+
+    .comments-container .response-dropdown img {
+        width: 29px
+    }
+
+    .responses .container-style {
+        margin: 5px 8px !important;
+        width: 85px !important;
+        height: 33px !important
+    }
+
+    .responses .container-style img {
+        width: 28px
+    }
+
+    .response-dropdown {
+        margin-top: -12px !important;
+    }
+
+    /* .chapters-section .container-style img{border-radius: 6px 0 0 6px; } */
+    .series-details .comic-img img.comic {
+        width: 205px;
+        height: 274px
+    }
+
+    //.series-details .main-container {
+    //    margin-top: -420px !important
+    //}
+
+    .comic-collection-section .theme-btn.w-147 {
+        width: 147px !important
+    }
+
+    .comic-collection-section img.author {
+        width: 75px
+    }
+
+    .chapter-section .section-margin {
+        margin-top: 100px !important
+    }
+
+    .chapter-selection .btn {
+        width: 124px !important;
+        height: 42px !important
+    }
+
+    .chapter-section .dropdown button {
+        width: 150px !important;
+    }
+
+    .recommended-collection .trending-slider .content .theme-btn-dark {
+        width: 40px !important
+    }
+
+    .chapters-section .heading img {
+        width: 26px
+    }
+
+    .images-slider img {
+        width: calc(100vw / 2 - 30px);
+        height: calc((100vw/2 - 30px) * 1.34);
+    }
+}
+
+@media (width:768px) {
+    .latestUpdates-section .content img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav-inner {
+        margin-top: 0px;
+    }
+
+    .trending-slider .content {
+        min-width: 525px;
+    }
+
+    .trending-slider .images-sec img {
+        width: 145px;
+        height: auto
+    }
+
+    .trending-slider .m-flex-column {
+        flex-direction: row !important
+    }
+
+    .trending-slider .trend-heading .m-flex-column {
+        flex-direction: row-reverse !important
+    }
+
+    .trending-slider .content {
+        min-height: 768px
+    }
+
+    .subscribe-sec {
+        width: 78%;
+    }
+
+    .blog-section .content {
+        min-height: 472px
+    }
+
+    .profile-pg .header .header-content .main-container {
+        max-width: 75% !important;
+        padding-bottom: 30px !important
+    }
+
+    .profile-pg .header .header-content .main-container .inner-sec div {
+        margin-right: 0 !important;
+    }
+
+    .profile-pg .header .header-content button {
+        margin: 8px !important
+    }
+
+    // .comics-section .dropdowns-sec .dropdown-tranparent {
+    //     width: 155px !important
+    // }
+
+    .series-pg .header img.mobile {
+        height: 520px;
+        object-fit: cover;
+        opacity: 0.5
+    }
+
+    .series-details .col-sm-6 {
+        width: 100%;
+        margin-top: 30px !important
+    }
+
+    .comic-collection-section .col-sm-4 {
+        width: 100%;
+        padding: 0 100px !important;
+    }
+
+    .comic-collection-section h2,
+    .comic-collection-section p {
+        text-align: center !important;
+    }
+
+    .comic-collection-section h2 {
+        margin: 10px 0px !important;
+    }
+
+    .chapter-section .dropdown svg {
+        margin: 0px !important
+    }
+
+    .upgrade-section .m-text-center {
+        text-align: center !important
+    }
+}
+
+@media (min-width:769px) and (max-width:1439px) {
+    .latestUpdates-section img {
+        width: 100%;
+        height: auto
+    }
+
+    .img-sec img {
+        width: 100%;
+        height: auto
+    }
+
+    .subscribe-sec {
+        width: 100%
+    }
+
+    // .footer-section .col-sm-4 {
+    //     width: 50%;
+    // }
+
+    // .footer-section .col-sm-2 {
+    //     width: 50%;
+    // }
+
+    .latestUpdates-section .font-20 {
+        font-size: 16px;
+    }
+
+    .latestUpdates-section .row .col-sm-2 {
+        width: 25%
+    }
+
+    .left-slider .font-50 {
+        font-size: 22px
+    }
+
+    .navbar-brand img {
+        max-width: 150px;
+        height: auto;
+        margin-top: -25px
+    }
+
+    .navbar .nav-link {
+        font-size: 12px !important
+    }
+
+    .input-style {
+        width: 200px !important;
+        height: 35px
+    }
+
+    .homepage .header h1 {
+        font-size: 50px
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .homepage .header button.my-sm-5 {
+        margin-top: 30px !important;
+    }
+
+    .carousel-caption {
+        top: 160px;
+    }
+
+    .images-slider img {
+        width: 160px;
+        height: 229px;
+    }
+
+    .slider-sec {
+        width: 585px;
+    }
+
+    .images-slider .slick-arrow.slick-next {
+        top: 40px
+    }
+
+    .images-slider .slick-arrow.slick-next svg {
+        width: 25px
+    }
+
+    .series-slider img {
+        max-width: 150px;
+        height: auto
+    }
+
+    .leftSeries-slider .inner-content {
+        margin-left: 20px;
+    }
+
+    .leftSeries-slider .slick-arrow.slick-next {
+        bottom: -30px
+    }
+
+    .leftSeries-slider .slick-dots {
+        bottom: -25px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+
+}
+
+@media (min-width:769px) and (max-width:1225px) {
+    .mobile-menu-cont.mobile {
+        display: flex !important
+    }
+
+    .mobile-nav {
+        display: flex !important
+    }
+
+    nav.desktop {
+        display: none !important
+    }
+
+    .homepage .header .carousel-caption {
+        top: 160px;
+    }
+
+    .popularSeries-section .row .col-sm-6 {
+        width: 100%
+    }
+
+    // .popularSeries-section {
+    //     padding-left: 50px !important
+    // }
+
+    .leftSeries-slider .slick-arrow.slick-next {
+        bottom: -40px !important;
+        top: 70%;
+    }
+
+    .leftSeries-slider .slick-dots {
+        bottom: 55px !important
+    }
+
+    .latestUpdates-section .content img {
+        margin-bottom: 5px !important
+    }
+
+    .register-section .col-sm-3 {
+        padding-left: 140px !important
+    }
+
+    // .homepage .header {
+    //     height: 700px !important
+    // }
+
+    // .latestUpdates-section {
+    //     padding: 0 50px !important
+    // }
+    //
+    //.latestUpdates-section .col-sm-2 {
+    //    width: 33.333% !important
+    //}
+
+    .nav-drill {
+        width: 33% !important
+    }
+
+    .blog-section .main-container {
+        max-width: 95% !important
+    }
+
+    .vip-section .main-container {
+        max-width: 85% !important
+    }
+
+    .blog-section p br {
+        display: none !important
+    }
+
+    .trending-slider-section .desktop {
+        display: none !important
+    }
+
+    .trending-slider-section .mobile {
+        display: flex !important
+    }
+
+    .vip-section .col-sm-4 {
+        width: 100%;
+        margin: 20px 0px !important
+    }
+
+    .bookmark-section .col-sm-3 {
+        width: 33%;
+    }
+
+    .bookmark-section .content button {
+        margin: 0 3px !important
+    }
+
+    .comics-section .dropdowns-sec {
+        justify-content: center !important;
+    }
+
+    // .comics-section .dropdowns-sec .dropdown-tranparent {
+    //     margin: 10px !important
+    // }
+
+    .comics-section .dropdowns-sec .theme-btn {
+        width: 278px !important;
+        // margin: 10px !important
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .profile-pg .header .header-content .main-container {
+        max-width: 78% !important;
+        padding-bottom: 30px !important;
+        margin-top: 30px !important
+    }
+
+    .profile-pg .header .header-content .buttons-sec {
+        flex-direction: column;
+        margin-left: -150px
+    }
+
+    .profile-pg .header .header-content button {
+        margin: 8px 5px !important
+    }
+
+    .history-section .header-content {
+        margin-top: 0px !important;
+    }
+
+    // .history-section .main-container.con-history-style,
+    // .chapter-section .main-container {
+    //     max-width: 80% !important;
+    // }
+
+    .history-section .inner-sec {
+        flex-direction: column
+    }
+
+    .history-section .inner-sec p br {
+        display: none !important
+    }
+
+    .history-section .m-left {
+        margin: 10px 25px !important
+    }
+
+    .history-section img.profile-img {
+        width: 100%
+    }
+
+    .history-section .content img.comic-img {
+        width: 130px !important
+    }
+
+    .history-section .main-container,
+    .chapters-section .main-container {
+        max-width: 90% !important;
+    }
+
+    .history-section .col-sm-4 {
+        width: 50%;
+        margin-top: 30px !important
+    }
+
+    .container-style.history-label {
+        padding: 5px !important;
+        display: flex;
+        justify-content: center;
+        flex-direction: column
+    }
+
+    .chapters-section .col-sm-3 {
+        width: 50%
+    }
+
+    .container-style.w-780 {
+        width: auto !important
+    }
+
+    .responses .response-sec {
+        flex-direction: column;
+    }
+
+    .responses .container-style {
+        margin: 5px 8px !important
+    }
+
+    .comments-section .main-container {
+        max-width: 90%;
+    }
+
+    .series-details img.comic {
+        width: 80%;
+        margin: 30px 80px !important
+    }
+
+    .series-details .col-sm-6 {
+        width: 100%;
+        margin-top: 30px !important
+    }
+
+    .comic-collection-section .latestUpdates-section {
+        padding: 0px !important
+    }
+
+    .comic-collection-section .main-container {
+        max-width: 100% !important
+    }
+
+    .comic-collection-section .col-sm-4,
+    .comic-collection-section .col-sm-8 {
+        width: 100%;
+    }
+
+    .comic-collection-section .latestUpdates-section .content img {
+        width: 180px;
+    }
+
+    // .chapter-selection {
+    //     right: -80px;
+    // }
+
+    .keywords-sec {
+        flex-wrap: wrap;
+    }
+
+    .keywords-sec .container-style {
+        white-space: nowrap;
+        margin-top: 10px !important;
+    }
+
+    .login-info .font-24 {
+        font-size: 14px
+    }
+
+    .comic-col-pg .desktop.trending-slider-sec {
+        display: none !important
+    }
+
+    .comic-col-pg .comic-trending {
+        display: flex !important
+    }
+
+    .text-t-center {
+        text-align: center !important
+    }
+
+    .text-t-center.desktop {
+        width: 100%;
+        justify-content: center
+    }
+}
+
+
+@media (min-width:1920px) {
+    .navbar .nav-link {
+        font-size: 18px
+    }
+
+    .navbar a {
+        font-size: 18px
+    }
+
+    .notification-sec a {
+        font-size: 18px !important
+    }
+
+    .notification-sec .dropdown-menu {
+        min-width: 300px;
+        // height: 300px;
+    }
+
+    .notification-sec .font-12 {
+        font-size: 18px;
+    }
+
+    // .latestUpdates-section a {
+    //     font-size: 18px
+    // }
+
+    .latestUpdates-section a:hover {
+        color: white
+    }
+
+    .latestUpdates-section .font-12 {
+        font-size: 16px
+    }
+
+    // .nav-container {
+    //     max-width: 90% !important
+    // }
+}
+
+@media (max-width:1600px) {
+    .navbar .nav-link {
+        font-size: 14px;
+    }
+
+    .input-style {
+        width: 250px
+    }
+
+    .font-50 {
+        font-size: 40px
+    }
+
+    .upgrade-container {
+        max-width: 80% !important
+    }
+
+    footer {
+        padding: 1rem 3rem
+    }
+}
+
+@media (min-width:2000px) {
+    .popularSeries-section .main-container {
+        max-width: 1740px
+    }
+
+    .register-section .main-container {
+        max-width: 100%
+    }
+}
+
+@media (min-width:1440px) and (max-width:1920px) {
+    .popularSeries-section .main-container {
+        max-width: 1740px;
+    }
+
+    .inner-content {
+        .font-50 {
+            font-size: 35px;
+            -webkit-line-clamp: 1 !important;
+        }
+
+        p.color-grey {
+            font-size: 16px;
+            line-height: auto;
+            margin-bottom: 0;
+        }
+
+        div.my-5 {
+            margin-top: 1.5rem !important;
+            margin-bottom: 1.5rem !important;
+        }
+    }
+}
+
+@media (min-width:1200px) and (max-width:1439px) {
+    .inner-content {
+        .font-50 {
+            font-size: 27px;
+            -webkit-line-clamp: 1 !important;
+        }
+
+        p.color-grey {
+            font-size: 15px;
+            line-height: auto;
+            margin-bottom: 0;
+        }
+
+        div.my-5 {
+            margin-top: 1rem !important;
+            margin-bottom: 1rem !important;
+        }
+    }
+}
+
+@media (min-width:1440px) and (max-width:2400px) {
+    .popularSeries-section .main-container {
+        max-width: 1740px;
+    }
+}
+
+// @media screen and (min-width: 2400px) {
+//     .col-2.sideads {
+//         display: none;
+//     }
+// }
+
+@media (width:1024px) {
+    .mobile-nav {
+        display: flex !important
+    }
+
+    nav.desktop {
+        display: none !important
+    }
+
+    .popular-slider-container,
+    .popular-thumb-slider-container {
+        width: 100%
+    }
+
+    .nav-drill {
+        width: 27% !important
+    }
+
+    .homepage .header .slider-section {
+        height: 100%
+    }
+
+    .homepage .header .carousel-inner {
+        height: 100%
+    }
+
+}
+
+@media (min-width:769px) and (max-width:1023px) {
+    .caption-container {
+        max-width: 90%
+    }
+
+    .homepage .header {
+        height: 600px
+    }
+
+    .slider-section {
+        height: 100%
+    }
+
+    .slider-section .carousel-inner {
+        height: 100%
+    }
+}
+
+@media (width:768px) {
+    .m-text-center {
+        text-align: left !important
+    }
+
+    .caption-container h1 br {
+        display: none
+    }
+
+    .homepage .header {
+        height: 880px
+    }
+
+    .slider-section {
+        height: 100%
+    }
+
+    .slider-section .carousel-inner {
+        height: 100%
+    }
+
+    .text-t-center {
+        text-align: center !important
+    }
+
+    .nav-drill {
+        width: 35% !important
+    }
+
+    .chapter-selection {
+        top: 20vh;
+        bottom: auto
+    }
+}
+
+@media (max-width:615px) {
+    .trending-slider .content label {
+        font-size: 12px
+    }
+
+    .upgrade-container {
+        max-width: 100% !important
+    }
+
+    .chapter-selection {
+        bottom: 0px;
+        top: auto
+    }
+}

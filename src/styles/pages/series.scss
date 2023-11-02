@@ -1,0 +1,115 @@
+.comic-filter-row {
+    margin-left: calc(var(--mdb-gutter-x) * 0.5) !important;
+    margin-right: calc(var(--mdb-gutter-x) * 0.5) !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    // 4 dropdowns
+    .dropdown-tranparent {
+        // calc(calc(calc(calc(fullWidth - calc(btnBasis + searchBasis) - gap*5) - cal(above margin * 0.5/4*2)) / 4)
+        flex-basis: calc(calc(calc(calc(100% - calc(100px + 30%)) - 50px) - calc(var(--mdb-gutter-x) * 0.0625)) / 4);
+    }
+
+    .input-style {
+        flex-basis: 30%;
+        height: 52px;
+    }
+
+    .filterBtn {
+        flex-basis: 100px;
+        height: 52px;
+    }
+
+    .custom-dropdown {
+        .dropdown-toggle {
+            // select
+            width: 100%;
+            border-radius: 60px;
+            outline: none;
+            border: inherit;
+
+            background: transparent;
+            font-weight: 400;
+            font-size: 16px;
+            color: #9ba7bf;
+
+            margin: 0 12px;
+            outline: none;
+
+            option {
+                padding: 1rem;
+                background: rgba(35, 0, 47, 1);
+                border: 1px solid #7334ae;
+
+                // -webkit-backdrop-filter: blur(15px);
+                // backdrop-filter: blur(15px);
+
+                border-radius: 14px;
+                margin-top: 18px;
+                font-family: Biennale;
+            }
+        }
+    }
+
+    .dropdown-menu>button:first-child,
+    .dropdown-menu>button:first-child .dropdown-item {
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .dropdown-menu>button:last-child,
+    .dropdown-menu>button:last-child .dropdown-item {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+
+    .dropdown-item:hover {
+        color: #fff;
+    }
+}
+
+.ratingStar {
+    span {
+        font-size: 3rem !important;
+    }
+}
+
+@media (max-width:768px) {
+    .comic-filter-row {
+        a.dropdown-toggle {
+            padding: 0 12px
+        }
+
+        .dropdown-tranparent {
+            flex-basis: unset;
+        }
+
+        .input-style {
+            flex-basis: unset;
+
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .filterBtn {
+            flex-basis: unset;
+
+            height: 52px !important;
+            margin: 5px auto;
+            width: 50% !important;
+        }
+    }
+
+    .ratingStar {
+        span {
+            font-size: 1.5rem !important;
+        }
+    }
+}

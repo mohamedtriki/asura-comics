@@ -1,0 +1,135 @@
+.privacy-section .header-content,
+.blog-section .header-content {
+  padding-top: 70px !important
+}
+
+.profile-pg .header-content {
+  padding-top: 270px !important
+}
+
+.privacy-section .main-container {
+  max-width: 1485px
+}
+
+.blog-section .main-container {
+  max-width: 1450px
+}
+
+.blog-section .content {
+  min-height: 453px;
+  background: rgba(91, 68, 176, 0.1);
+  border: 1.4px solid #7334AE;
+  border-radius: 6px;
+}
+
+.container-style {
+  background: rgba(91, 68, 176, 0.1);
+  border: 1.4px solid #7334AE;
+  border-radius: 6px;
+}
+
+.profile-pg .header .header-content .main-container {
+  max-width: 1150px
+}
+
+.profile-pg .header .header-content .main-container .inner-sec {
+  padding: 38px
+}
+
+.trending-slider-section .main-container {
+  max-width: 1455px
+}
+
+.trending-slider-sec .content .badge-img {
+  width: 21px !important;
+  height: 21px !important;
+}
+
+.trending-slider-sec .images-sec img {
+  width: 145px;
+  height: 194px
+}
+
+.trending-slider-sec .label-comic {
+  width: 85px;
+  height: 31px;
+  background: #7334AE;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookmark-section .main-container {
+  max-width: 1460px;
+  padding-top: 70px !important;
+}
+
+.bookmark-section .content {
+  min-height: 350px;
+  background: rgba(91, 68, 176, 0.1);
+  border: 1.4px solid #7334AE;
+  border-radius: 20px;
+}
+
+.bookmark-section .desktop .content h2 {
+  height: 48px;
+  line-height: 24px;
+}
+
+.bookmark-section .content .progress {
+  width: 264px;
+  height: 12px;
+  border-radius: 20px;
+  background: rgba(91, 68, 176, 0.1);
+  border: 1.4px solid #7334AE;
+}
+
+.progress .progress-bar {
+  border-radius: 20px;
+  background-color: #5B44B0;
+}
+
+.bookmark-section .content .rating {
+  width: 45px;
+  height: 29px;
+  background: #121111;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 15px;
+  top: 15px
+}
+
+.bookmark-section .mobile .content {
+  min-height: 100px
+}
+
+.bookmark-section .mobile .content h2 {
+  font-size: 16px !important
+}
+
+.bookmark-section .mobile .content img {
+  width: 81px;
+  height: 88px
+}
+
+.bookmark-section .mobile .content .modal {
+  top: unset;
+  bottom: 0;
+  height: fit-content;
+}
+
+.bookmark-section .mobile .content .modal-dialog {
+  margin: 0px !important
+}
+
+.bookmark-section .mobile .content .modal-header {
+  padding: 5px;
+  border-style: hidden;
+}
+
+.bookmark-section .mobile .content .modal-content {
+  border-radius: 0px !important;
+}

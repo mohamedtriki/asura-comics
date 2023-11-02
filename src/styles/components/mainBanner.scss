@@ -1,0 +1,77 @@
+.truncate-text {
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  max-height: 76px; /* Fallback for non-webkit, line-height * 2 */
+  //line-height: 38px;
+  -webkit-line-clamp: 2; /* if you change this, make sure to change the fallback line-height and height */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.featuredSeriesSliderMobile {
+  @media (min-width: 769px) {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1439px) {
+  #carouselinfo {
+    height: 240px;
+    width: 585px;
+  }
+
+  .truncate-text {
+    max-height: 115px;
+    //line-height: 55px;
+  }
+
+  button.slick-arrow {
+    height: 238px;
+  }
+}
+
+@media (max-width: 768px) {
+  .truncate-text {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #carouselinfo {
+    height: 350px;
+    width: 786px;
+  }
+
+  .truncate-text {
+    max-height: 202px; /* Fallback for non-webkit, line-height * 2 */
+    //line-height: 101px;
+  }
+}
+
+.truncate-text-desc {
+  --line-height: 26px;
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  max-height: calc(var(--line-height) * 5); /* Fallback for non-webkit, line-height * 2 */
+  line-height: var(--line-height);
+  -webkit-line-clamp: 5; /* if you change this, make sure to change the fallback line-height and height */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 1439px) {
+  .truncate-text-desc {
+    --line-height: 26px;
+    display: block; /* Fallback for non-webkit */
+    display: -webkit-box;
+    max-height: calc(var(--line-height) * 2); /* Fallback for non-webkit, line-height * 2 */
+    line-height: var(--line-height);
+    -webkit-line-clamp: 2; /* if you change this, make sure to change the fallback line-height and height */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  } 
+}

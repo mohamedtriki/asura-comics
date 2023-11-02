@@ -1,0 +1,54 @@
+footer .main-container {
+  max-width: 1740px;
+}
+
+footer {
+  background: #262626;
+}
+
+.footer-section a {
+  font-weight: 400;
+  font-size: 18px;
+  color: #9BA7BF;
+  white-space: nowrap;
+}
+
+.footer-section h4 {
+  font-weight: 700;
+}
+
+.footer-section a:hover {
+  color: #867BC3;
+}
+
+.footer-section a:hover path {
+  fill: #867BC3;
+}
+
+.subscribe-sec {
+  width: 548px;
+  height: 64px;
+  border: 1px solid #7334AE;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
+.subscribe-sec input {
+  border-style: none;
+  padding: 10px 13px;
+  width: 100%;
+  background: none;
+}
+
+.subscribe-sec input::placeholder {
+  color: #C2C2C2;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.subscribe-sec .theme-btn {
+  width: 112px;
+  height: 37px;
+  margin-top: 12px !important;
+  font-size: 14px
+}
